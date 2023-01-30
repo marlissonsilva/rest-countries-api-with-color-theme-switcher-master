@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="./js/script.js" defer></script>
+</head>
+
+
+<body>
+    <header>
+        <div class="wrap">
+            <h1>Where in the world?</h1>
+            <button id="dark-mode">
+                <i class="bi bi-moon-fill"></i>Dark Mode
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <nav>
+            <div>
+                <i class="bi bi-search"></i>
+                <input type="search" name="search" id="search-country" placeholder="Search for a country...">
+            </div>
+            <div class="input-container-region">
+                <input type="text" name="region" id="search-region" placeholder="Filter by Region">
+                <i class="bi bi-chevron-down"></i>
+                <div class="list-region">
+                        <button></button>
+                        <button>Africa</button>
+                        <button>America</button>
+                        <button>Asia</button>
+                        <button>Europe</button>
+                        <button>Oceania</button>
+                </div>
+
+            </div>
+        </nav>
+        <section class="container">
+            <ul id="fill_list">
+                <p class="load">Carregando...</p>
+            </ul>
+
+        </section>
+    </main>
+</body>
+
+</html>
